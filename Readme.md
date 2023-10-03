@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Юлия Абрамова](https://up.htmlacademy.ru/htmlcss-individual/1/user/644877).
-* Наставник: `Неизвестно`.
+* Наставник: `Николай Шабанов`(https://htmlacademy.ru/profile/id1057153).
 
 ---
 
