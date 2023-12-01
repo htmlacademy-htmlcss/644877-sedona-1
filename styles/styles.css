@@ -20,22 +20,33 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: #000000;
-  background-color: #ffffff;
-  text-align: center;
+  background-color: #F2F2F2;
 }
 
 .navigation-link {
   font-weight: 700;
   text-align: center;
-  text-transform: capitalize;
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
+}
+
+.navigation-badge {
+  color: #FFF;
+  background-color: #7DB54F;
+  text-align: center;
+  font-size: 10px;
+  line-height: 10px;
 }
 
 .hero {
-  background-image: url(../images/main/hero-background.jpg);
+  background-image: url("../images/main/hero-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  text-align: center;
+}
+
+.advantages {
+  text-align: center;
 }
 
 .lead {
@@ -77,6 +88,10 @@ body {
   background-color: rgba(131, 179, 211, 0.20);
 }
 
+.services {
+  text-align: center;
+}
+
 .services-lead {
   font-size: 30px;
   font-weight: 700;
@@ -110,6 +125,7 @@ body {
 .hotel-search {
   text-decoration: none;
   color: #000000;
+  text-align: center;
 }
 
 .hotel-search-title {
@@ -124,8 +140,6 @@ body {
   font-weight: 400;
   line-height: 26px;
 }
-
-
 
 .subscribe {
   background-image: url("../images/main/subscribe_background.jpg");
@@ -155,8 +169,8 @@ body {
   text-transform: uppercase;
   background-color: #82B3D3;
   color: #ffffff;
-
 }
+
 
 .contact-phone {
   font-size: 40px;
@@ -166,12 +180,8 @@ body {
   text-decoration: none;
 }
 
-.main-inner {
-  text-align: left;
-}
-
 .inner-header {
-  background-color: #000000;
+  background-color: #87a4c4;
   color: #ffffff;
   background-image: url("../images/catalog/catalog_hero_backgound.jpg");
   background-size: 100% auto;
@@ -182,7 +192,6 @@ body {
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
-
 }
 
 .breadcrumbs-link {
@@ -242,11 +251,18 @@ body {
   line-height: 28px;
 }
 
-.type,
+.type {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
+
 .price {
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
+  text-align: right;
 }
 
 .product-card-button {
@@ -264,6 +280,7 @@ body {
   background-color: #82B3D3;
   color: #ffffff;
   text-decoration: none;
+  text-align: center;
 }
 
 .pagination-current {
