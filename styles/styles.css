@@ -207,6 +207,14 @@ body {
   text-align: center;
 }
 
+.services-list-title {
+  display: flex;
+  padding: 64px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .services-lead {
   font-size: 30px;
   font-weight: 700;
@@ -234,8 +242,10 @@ body {
 
 .services-item {
   width: 400px;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  height: 385px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .services-title {
