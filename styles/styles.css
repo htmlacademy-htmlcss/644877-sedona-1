@@ -567,6 +567,7 @@ body {
 .product-list {
   list-style-type: none;
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
 }
 
@@ -602,9 +603,23 @@ body {
   text-transform: uppercase;
 }
 
+.pagination-contanier {
+  display: flex;
+  margin-top: 40px;
+
+}
+
 .pagination {
   width: 1060px;
   margin-top: 40px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination-link {
@@ -616,6 +631,11 @@ body {
   color: #ffffff;
   text-decoration: none;
   text-align: center;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
 }
 
 .pagination-current {
