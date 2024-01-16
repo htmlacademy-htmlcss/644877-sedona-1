@@ -270,6 +270,16 @@ body {
   text-decoration: none;
   color: #000000;
   text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.hotel-search-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 96px;
   padding-bottom: 96px;
 }
 
@@ -278,22 +288,22 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 20px;
-  padding-top: 96px;
-
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 .hotel-search-description {
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
-  margin-bottom: 54px;
-  margin-top: 0;
+  margin: 0;
+  padding-bottom: 54px;
 }
 
 .hotel-search button {
   display: block;
+  margin: 0;
+  padding: 0;
 }
 
 /* Рассылка */
@@ -302,6 +312,19 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
+  display: flex;
+  padding-top: 96px;
+  padding-bottom: 104px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .subscribe-title {
@@ -309,13 +332,17 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  color: #ffffff
+  color: #ffffff;
+  padding-bottom: 20px;
+  margin: 0;
 }
 
 .subscribe-description {
   font-size: 22px;
   line-height: 26px;
   color: #ffffff;
+  padding-bottom: 54px;
+  margin: 0;
 }
 
 .subscribe-button {
@@ -332,7 +359,33 @@ body {
 .page-footer {
   padding: 40px 70px 30px;
   display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-social-list {
+  display: flex;
   list-style-type: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social-item {
+  width: 47px;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-phone {
@@ -341,7 +394,19 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+  display: flex;
+  width: 720px;
+  height: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  justify-content: center;
+  align-items: center;
 }
+
+.logo-htmlacademy {
+  display: block;
+}
+
 
 .inner-header {
   background-color: #87a4c4;
@@ -350,12 +415,27 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   padding: 35px 70px 70px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
 }
 
 .inner-header-title {
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs {
+  display: flex;
+  list-style-type: none;
+  margin-top: 8px;
+  margin-bottom: 40px;
+
 }
 
 .breadcrumbs-link {
@@ -363,6 +443,8 @@ body {
   line-height: 21px;
   color: #ffffff;
   text-decoration: none;
+  margin-left: 28px;
+
 }
 
 .catalog-filter-title {
@@ -372,6 +454,19 @@ body {
 
 .filters {
   display: flex;
+  justify-content: space-between;
+}
+
+.filters .left {
+  display: flex;
+}
+
+.filters .right {
+  display: flex;
+}
+
+.filters fieldset {
+  padding: 0;
 }
 
 .catalog-filter-group-left {
@@ -387,11 +482,18 @@ body {
 .price-filter {
   width: 288px;
   margin-right: 70px;
+  margin-left: auto;
 }
 
 .control-input {
   font-size: 18px;
   line-height: 23px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+
 }
 
 .button {
