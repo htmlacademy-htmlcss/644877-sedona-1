@@ -403,11 +403,12 @@ body {
   align-items: center;
 }
 
+/* Навигация Каталог */
 .logo-htmlacademy {
   display: block;
 }
 
-
+/* Хедер Каталога */
 .inner-header {
   background-color: #87a4c4;
   color: #ffffff;
@@ -447,6 +448,7 @@ body {
 
 }
 
+/* Фильтры Каталога */
 .catalog-filter-title {
   font-weight: 700;
   text-transform: capitalize;
@@ -477,6 +479,10 @@ body {
 .catalog-filter-group {
   width: 150px;
   margin-right: auto;
+}
+
+.infra-filter-list {
+  padding: 0;
 }
 
 .price-filter {
@@ -518,8 +524,18 @@ body {
   color: #ffffff;
 }
 
+/* Каталог */
+
 .catalog {
   padding: 50px 70px 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sorting-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .catalog-title {
@@ -527,6 +543,31 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
+}
+
+.sort-view-contanier {
+  display: flex;
+}
+
+.view-type {
+  display: flex;
+  margin-left: 70px;
+}
+
+.view-type a {
+  width: 48px;
+  height: 48px;
+}
+
+.view-type a:not(:first-child) {
+  margin-left: 8px;
+}
+
+.product-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .product-card-link {
