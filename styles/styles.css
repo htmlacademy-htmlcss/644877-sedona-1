@@ -95,7 +95,7 @@ body {
 }
 
 .navigation-button {
-  margin-right: 70px;
+  /* margin-right: 70px; */
 }
 
 .navigation-badge {
@@ -162,6 +162,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-sizing: border-box;
+}
+
+.advantages-item > div {
+  box-sizing: border-box;
 }
 
 .advantages-title {
@@ -196,10 +201,12 @@ body {
 .advantages-square,
 .advantages-tourist {
   background-color: rgba(131, 179, 211, 0.12);
+  width: 400px;
 }
 
 .advantages-road {
   background-color: rgba(131, 179, 211, 0.20);
+  width: 400px;
 }
 
 /* Сервисы */
@@ -375,15 +382,16 @@ body {
   display: flex;
   list-style-type: none;
   align-items: center;
+  width: 142px;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .footer-social-item {
   width: 47px;
   height: 40px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -417,9 +425,6 @@ body {
   background-repeat: no-repeat;
   padding: 35px 70px 70px;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
 
 }
 
@@ -449,40 +454,35 @@ body {
 }
 
 /* Фильтры Каталога */
-.catalog-filter-title {
-  font-weight: 700;
-  text-transform: capitalize;
-}
-
 .filters {
   display: flex;
-  justify-content: space-between;
-}
-
-.filters .left {
-  display: flex;
-}
-
-.filters .right {
-  display: flex;
-}
-
-.filters fieldset {
-  padding: 0;
-}
-
-.catalog-filter-group-left {
-  width: 150px;
-  margin-right: 70px;
+  gap: 70px;
 }
 
 .catalog-filter-group {
   width: 150px;
-  margin-right: auto;
+  margin: 0;
+  padding: 0;
 }
 
+.catalog-filter-group-aside {
+  margin-left: auto;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 32px;
+}
+
+
 .infra-filter-list {
+  display: flex;
+  flex-direction: column;
   padding: 0;
+  list-style-type: none;
+  gap: 16px;
+  margin: 0;
 }
 
 .price-filter {
@@ -499,7 +499,6 @@ body {
 .buttons {
   display: flex;
   flex-direction: column;
-
 }
 
 .button {
@@ -528,8 +527,6 @@ body {
 
 .catalog {
   padding: 50px 70px 60px;
-  display: flex;
-  flex-direction: column;
 }
 
 .sorting-container {
@@ -556,6 +553,7 @@ body {
 }
 
 .view-type a {
+  display: block;
   width: 48px;
   height: 48px;
 }
@@ -565,21 +563,44 @@ body {
 }
 
 .product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
   list-style-type: none;
   margin: 0;
-  margin-bottom: 40px;
   padding: 0;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 2px solid #e6e6e6;
+}
+
+.product-card {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  padding: 20px;
+  grid-column-gap: 20px;
+  grid-row-gap: 16px;
+
 }
 
 .product-card-link {
   text-decoration: none;
   color: #000000;
+  grid-column: 1/ -1;
+
+}
+
+.product-card-image {
+  object-fit: cover;
 }
 
 .product-card-title {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  margin: 0;
+  margin-top: 16px;
+
 }
 
 .type {
@@ -603,10 +624,16 @@ body {
   text-transform: uppercase;
 }
 
+.raiting-number {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+}
+
 .pagination-contanier {
   display: flex;
-  margin-top: 40px;
-
 }
 
 .pagination {
@@ -616,11 +643,10 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  gap: 8px;
 }
 
-.pagination-item:not(:last-child) {
-  margin-right: 8px;
-}
+
 
 .pagination-link {
   font-size: 20px;
