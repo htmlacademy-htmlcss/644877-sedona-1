@@ -31,6 +31,12 @@ body {
   flex-direction: column;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -421,7 +427,7 @@ body {
   background-color: #87a4c4;
   color: #ffffff;
   background-image: url("../images/catalog/catalog_hero_backgound.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 35px 70px 70px;
   margin: 0;
@@ -578,20 +584,19 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 140px);
   padding: 20px;
-  grid-column-gap: 20px;
-  grid-row-gap: 16px;
-
+  grid-gap: 16px 20px;
+  border: 1px solid #e6e6e6;
 }
 
 .product-card-link {
   text-decoration: none;
   color: #000000;
   grid-column: 1/ -1;
-
 }
 
 .product-card-image {
-  object-fit: cover;
+  display: block;
+  margin-bottom: 16px;
 }
 
 .product-card-title {
@@ -599,15 +604,14 @@ body {
   font-weight: 700;
   line-height: 28px;
   margin: 0;
-  margin-top: 16px;
-
+  padding: 0;
 }
 
 .type {
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
-  text-align: left;
+  margin: 0;
 }
 
 .price {
@@ -615,6 +619,7 @@ body {
   font-weight: 400;
   line-height: 21px;
   text-align: right;
+  margin: 0;
 }
 
 .product-card-button {
@@ -622,6 +627,13 @@ body {
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
+  width: 140px;
+  height: 36px;
+  margin: 0;
+  background-color: #82b3d3;
+  color: #ffffff;
+  display: flex;
 }
 
 .raiting-number {
@@ -630,6 +642,10 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   background-color: #f2f2f2;
+  text-align: center;
+  width: 140px;
+  height: 37px;
+  margin: 0;
 }
 
 .pagination-contanier {
