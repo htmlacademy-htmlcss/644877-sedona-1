@@ -100,6 +100,7 @@ img {
   min-height: 18px;
 }
 
+
 .navigation-button {
   /* margin-right: 70px; */
 }
@@ -629,11 +630,9 @@ img {
   text-transform: uppercase;
   text-align: center;
   width: 140px;
-  height: 36px;
   margin: 0;
   background-color: #82b3d3;
   color: #ffffff;
-  display: flex;
 }
 
 .raiting-number {
