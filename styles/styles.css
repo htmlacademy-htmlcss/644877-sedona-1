@@ -207,17 +207,25 @@ img {
   position: relative;
 }
 
-.hero-divider {
+.hero::before {
   position: absolute;
   bottom: 4px;
   left: 0;
   right: 0;
+  z-index: 1;
+  content: " ";
+  background-image: url("../images/main/hero-divider.svg");
+  height: 57px;
+  width: 100%;
 }
+
+
 
 /* Преимущества */
 
 .advantages {
   text-align: center;
+
 }
 
 .advantages-list-title {
@@ -262,7 +270,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 85px;
+  padding: 0 84px;
   gap: 30px;
   box-sizing: border-box;
 }
