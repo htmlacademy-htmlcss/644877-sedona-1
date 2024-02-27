@@ -254,25 +254,29 @@ img {
 .advantages-list {
   display: grid;
   grid-template-columns: repeat(3, 400px);
-  grid-template-rows: repeat(3, 385px);
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .advantages-item.with-img {
-  grid-column: span 2;
-  padding: 0;
-
+  grid-column: 1/-1;
+  display: flex;
 }
 
-.advantages-item {
+.advantages-item,
+.advantages-item > div {
+  height: 385px;
+}
+
+
+.advantages-item > div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 0 84px;
+  justify-content: center;
   gap: 30px;
-  box-sizing: border-box;
+  padding: 0 84px;
 }
 
 .advantages-title {
@@ -639,7 +643,18 @@ img {
 
 .breadcrumbs-item {
   position: relative;
+  display: flex;
+}
 
+.breadcrumbs-item:not(:last-child)::after {
+  content: '';
+  width: 8px;
+  height: 11px;
+  background-image: url(../images/catalog/arrow.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 2px;
+  right: -18px;
 }
 
 .breadcrumbs-link {
@@ -647,8 +662,6 @@ img {
   line-height: 21px;
   color: #ffffff;
   text-decoration: none;
-  display: flex;
-  align-items: center;
 }
 
 .breadcrumbs-link-home {
@@ -660,18 +673,17 @@ img {
   display: block;
 }
 
-.breadcrumbs-item:not(:last-child)::after {
-  content: '';
-  width: 8px;
-  height: 20px;
-  background-image: url(../images/catalog/arrow.svg);
-  background-repeat: no-repeat;
-  position: absolute;
-  right: -18px;
-  top: 2px;
+.breadcrumbs-link:hover {
+  opacity: 0.6;
 }
 
+.breadcrumbs-link:focus {
+  opacity: 1;
+}
 
+.breadcrumbs-link:active {
+  opacity: 0.3;
+}
 
 /* Фильтры Каталога */
 .filters {
