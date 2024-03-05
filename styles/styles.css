@@ -37,11 +37,6 @@ img {
   object-fit: contain;
 }
 
-button,
-input {
-  font-family: inherit;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -162,6 +157,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: inherit;
 }
 
 .navigation-button:hover {
@@ -530,6 +526,7 @@ input {
   border: none;
   font-size: 18px;
   width: 452px;
+  font-family: inherit;
 }
 
 .field-with-bg {
@@ -760,6 +757,11 @@ input {
 
 .modal-field-error {
   color: #ff5757;
+  display: none;
+}
+
+.error-show {
+  display: block;
 }
 
 .modal-input {
@@ -771,6 +773,7 @@ input {
   border: none;
   font-weight: 700;
   font-size: 18px;
+  font-family: inherit;
 }
 
 .modal-field-with-description::before {
@@ -920,6 +923,7 @@ input {
   padding: 0;
   margin-top: 25px;
   cursor: pointer;
+  font-family: inherit;
 }
 
 .modal-submit-button:hover {
@@ -1138,6 +1142,7 @@ input {
   padding-left: 20px;
   font-weight: 700;
   box-sizing: border-box;
+  font-family: inherit;
 }
 
 .range-scale {
@@ -1212,6 +1217,7 @@ input {
   justify-content: center;
   height: 36px;
   padding: 0;
+  font-family: inherit;
 }
 
 .submit-button:hover {
@@ -1247,6 +1253,7 @@ input {
   height: 36px;
   outline: none;
   padding: 0;
+  font-family: inherit;
 }
 
 .reset-button:hover {
