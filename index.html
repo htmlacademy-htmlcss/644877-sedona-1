@@ -193,7 +193,7 @@
           </svg>
         </a>
       </footer>
-      <section class="modal-container">
+      <section class="modal-container modal-container-close">
         <div class="modal modal-search">
           <button class="modal-close-button" type="button">
             <span class="visually-hidden">Закрыть</span>
@@ -222,7 +222,8 @@
               </div>
 
               <div class="visitors">
-                <label class="modal-field-label visitors-label" for="adults">Взрослые:
+                <div class="modal-field-label visitors-label">
+                  <label class="modal-field-label visitors-label" for="adults">Взрослые: </label>
                   <button class="modal-input-number-button modal-input-number-minus" type="button">
                     <span class="visually-hidden">Уменьшить количество</span>
                   </button>
@@ -231,8 +232,8 @@
                   <button class="modal-input-number-button modal-input-number-plus" type="button">
                     <span class="visually-hidden">Увеличить количество</span>
                   </button>
-                </label>
-                <span class="form-label">
+                </div>
+                <div class="form-label">
                   <div class="modal-field-label visitors-label">
                     <div class="modal-field-label-with-tooltip">
                       <label class="modal-field-label-text" for="children">Дети:</label>
@@ -260,7 +261,7 @@
                       <span class="visually-hidden">Увеличить количество</span>
                     </button>
                   </div>
-                </span>
+                </div>
               </div>
 
               <button class="modal-submit-button" type="submit">Найти</button>
