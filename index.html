@@ -6,6 +6,7 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+    <link rel="icon" type="image/png" href="images/main/favicon.png">
   </head>
 
   <body>
@@ -67,7 +68,7 @@
                 <div class="advantages-line"></div>
                 <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img class="advantages-img" src="images/main/photo1.jpg" width="800" height="385"
+              <img class="advantages-img" src="images/main/photo-1.jpg" width="800" height="385"
                 alt="Домики на фоне гор.">
             </li>
 
@@ -102,7 +103,7 @@
                 <div class="advantages-line"></div>
                 <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
-              <img class="advantages-img" src="images/main/photo2.jpg" width="800" height="385" alt="Горный каньон.">
+              <img class="advantages-img" src="images/main/photo-2.jpg" width="800" height="385" alt="Горный каньон.">
             </li>
           </ul>
         </section>
@@ -115,19 +116,16 @@
           </div>
           <ul class="services-list">
             <li class="services-item services-house">
-              <img class="services-img" src="images/main/house.svg" width="800" height="385" alt="Домик">
               <h3 class="services-title">Жильё</h3>
               <p class="services-description">Рекомендуем пожить в настоящем мотеле,<br> всё как в кино!</p>
             </li>
             <li class="services-item services-food">
-              <img class="services-img" src="images/main/hamburger.svg" width="800" height="385" alt="Гамбургер">
               <h3 class="services-title">Еда</h3>
               <p class="services-description">Всегда заказывайте топовый фирменный бургер,<br> вы не
                 разочаруетесь!
               </p>
             </li>
             <li class="services-item services-souvenirs">
-              <img class="services-img" src="images/main/gift.svg" width="800" height="385" alt="Сувениры">
               <h3 class="services-title">Сувениры</h3>
               <p class="services-description">Не только китайского,<br> но и настоящего местного производства!</p>
             </li>
@@ -147,7 +145,7 @@
             <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="user-email">Ваш e-mail</label>
-              <input class="field" type="text" id="user-email" name="user-email" placeholder="Ваш e-mail">
+              <input class="field" type="email" id="user-email" name="user-email" placeholder="Ваш e-mail" required>
               <button class="subscribe-button" type="submit">Подписаться</button>
             </form>
           </div>
@@ -156,7 +154,7 @@
       <footer class="page-footer">
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="footer-social-link footer-social-vk" href="https://vk.com/htmlacademy">
+            <a class="footer-social-link footer-social-vk" href="https://vk.com/htmlacademy" aria-label="Вконтакте">
               <svg class="footer-social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                 width="24" height="14" viewBox="0 0 24 14">
                 <path
@@ -166,7 +164,7 @@
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-link footer-social-tg" href="https://t.me/htmlacademy">
+            <a class="footer-social-link footer-social-tg" href="https://t.me/htmlacademy" aria-label="Телеграм">
               <svg class="footer-social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                 width="18" height="16" viewBox="0 0 18 16">
                 <path
@@ -175,7 +173,8 @@
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-link footer-social-yt" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="footer-social-link footer-social-yt" href="https://www.youtube.com/user/htmlacademyru"
+              aria-label="Ютьюб">
               <svg class="footer-social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                 width="22" height="17" viewBox="0 0 22 17">
                 <path
@@ -185,7 +184,7 @@
           </li>
         </ul>
         <a class="contact-phone" href="tel:+78128121212">+7(812) 812-12-12</a>
-        <a class="logo-htmlacademy" href="https://htmlacademy.ru/">
+        <a class="logo-htmlacademy" href="https://htmlacademy.ru/" aria-label="htmlacademy">
           <svg class="footer-logo-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
             width="115" height="34" viewBox="0 0 115 34">
             <path
@@ -246,11 +245,9 @@
                               fill="#fff" />
                           </svg>
                         </button>
-                        <span class="tooltip-text" role="tooltip" id="tooltip-label-count">Укажите количество детей,
-                          которые
-                          будут с вами, возраст
-                          которых от 6 до
-                          18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                        <span class="tooltip-text" role="tooltip" id="tooltip-label-count">Укажите количество
+                          детей,<br>которые<br>будут с вами, возраст<br>которых от 6 до<br>18 лет. Дети до 6 лет
+                          размещаются бесплатно.</span>
                       </span>
                     </div>
                     <button class="modal-input-number-button modal-input-number-minus" type="button">
