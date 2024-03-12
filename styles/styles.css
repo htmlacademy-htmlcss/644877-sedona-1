@@ -121,8 +121,8 @@ img {
 
 .navigation-user .navigation-link {
   width: 44px;
-  padding: 0;
   height: 64px;
+  padding: 0;
 }
 
 .navigation-search {
@@ -142,7 +142,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 36px;
+  min-height: 36px;
   padding: 0 34px;
   margin: 0 auto;
   margin-left: 20px;
@@ -153,6 +153,7 @@ img {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  white-space: nowrap;
   border-radius: 4px;
   color: #ffffff;
   background: #756157;
@@ -204,12 +205,17 @@ img {
   background-image: url("../images/main/hero-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-color: #ffffff;
+  background-color: #82b3d3;
+}
+
+.hero-img {
+  display: block;
+  margin: auto;
 }
 
 .hero::before {
   position: absolute;
-  bottom: 4px;
+  bottom: 0;
   left: 0;
   right: 0;
   z-index: 1;
@@ -230,7 +236,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 69px 0;
+  padding: 64px 0 90px
 }
 
 .lead {
@@ -326,7 +332,6 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 64px 0;
 }
 
 .services-lead {
@@ -365,7 +370,7 @@ img {
 }
 
 .services-item::before {
-  content: '';
+  content: " ";
   width: 72px;
   height: 75px;
   background-repeat: no-repeat;
@@ -496,7 +501,7 @@ img {
 
 .subscribe-form {
   display: flex;
-  height: 52px;
+  min-height: 52px;
   width: 684px;
 }
 
@@ -562,6 +567,24 @@ img {
   border-bottom-right-radius: 4px;
   background-color: #82b3d3;
   color: #ffffff;
+  cursor: pointer;
+}
+
+.subscribe-button:hover {
+  background-color: #68a2ca;
+}
+
+.subscribe-button:focus {
+  background-color: #68a2ca;
+}
+
+.subscribe-button:active {
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.subscribe-button:disabled {
+  background-color: #e5e5e5;
 }
 
 /* Футер */
@@ -782,7 +805,7 @@ img {
   top: 14px;
   right: 20px;
   z-index: 1;
-  content: "";
+  content: " ";
   width: 20px;
   height: 20px;
   background-image: url("../images/main/Calendar.svg");
@@ -872,7 +895,7 @@ img {
   position: absolute;
   top: 14px;
   z-index: 1;
-  content: "";
+  content: " ";
   width: 20px;
   height: 20px;
   box-sizing: border-box;
@@ -1070,7 +1093,7 @@ img {
   position: absolute;
   top: 5px;
   left: 4px;
-  content: "";
+  content: " ";
   width: 12px;
   height: 10px;
   background-image: url("../images/catalog/tick.svg");
@@ -1093,7 +1116,7 @@ img {
   position: absolute;
   top: 5px;
   left: 5px;
-  content: "";
+  content: " ";
   width: 10px;
   height: 10px;
   background-color: #3f5e72;
@@ -1108,6 +1131,18 @@ img {
 
 .range-input-label {
   position: relative;
+}
+
+.range-input-min {
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  border: none;
+}
+
+.range-input-max {
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  border: none;
 }
 
 .range-input-text {
@@ -1201,6 +1236,7 @@ img {
   border: none;
   background-color: #82b3d3;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .submit-button:hover {
@@ -1237,6 +1273,7 @@ img {
   border: none;
   border-radius: 4px;
   outline: none;
+  cursor: pointer;
 }
 
 .reset-button:hover {
@@ -1296,8 +1333,7 @@ img {
 
 .select-control {
   width: 100%;
-  height: 49px;
-  padding: 14px 20px;
+  padding: 13px 20px;
   padding-right: 99px;
   font: inherit;
   font-size: 18px;
