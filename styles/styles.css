@@ -510,6 +510,7 @@ img {
   background-image: url("../images/main/subscribe-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-color: #82b3d3;
 }
 
 .subscribe-no-bg {
@@ -1178,7 +1179,7 @@ img {
   color: #000000;
   font-size: 18px;
   line-height: 24px;
-  width: 700;
+  font-weight: 700;
   text-align: right;
   opacity: 0.3;
 }
