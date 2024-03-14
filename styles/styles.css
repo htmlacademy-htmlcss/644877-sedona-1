@@ -365,7 +365,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 
@@ -399,9 +399,10 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 230px;
+  width: 400px;
   min-height: 385px;
-  padding: 0 85px;
+  padding: 20px 85px;
+  box-sizing: border-box;
   gap: 30px;
 }
 
@@ -449,6 +450,8 @@ img {
   display: flex;
   justify-content: center;
   text-align: center;
+  padding: 0 20px;
+  box-sizing: border-box;
   text-decoration: none;
   color: #000000;
 }
@@ -519,8 +522,8 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 96px;
-  padding-bottom: 104px;
+  padding: 96px 20px 104px;
+  box-sizing: border-box;
   text-align: center;
   background-image: url("../images/main/subscribe-background.jpg");
   background-size: 100% auto;
