@@ -488,7 +488,7 @@ img {
   align-items: center;
   box-sizing: border-box;
   min-height: 52px;
-  padding: 0 50px;
+  padding: 8px 50px;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -1413,6 +1413,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-left: 70px;
+  max-width: 160px;
+  gap: 8px;
 }
 
 .view-type a {
@@ -1441,10 +1443,6 @@ img {
 
 .cards-button-current.cards-button-current {
   border-color: #000000;
-}
-
-.view-type a:not(:first-child) {
-  margin-left: 8px;
 }
 
 .product-list {
@@ -1587,6 +1585,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  align-self: start;
   padding: 8px 22px;
   margin: 0;
   font-size: 16px;
