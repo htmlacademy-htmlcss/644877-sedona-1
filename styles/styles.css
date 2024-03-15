@@ -276,6 +276,7 @@ img {
   margin: 0;
   font-size: 22px;
   line-height: 26px;
+  color: #333333;
 }
 
 .advantages-list {
@@ -297,8 +298,9 @@ img {
   align-items: center;
   justify-content: center;
   gap: 30px;
-  padding: 0 84px;
-  height: 385px;
+  padding: 20px 84px;
+  min-height: 385px;
+  box-sizing: border-box;
 }
 
 .advantages-title {
@@ -313,11 +315,18 @@ img {
   font-size: 18px;
   line-height: 21px;
   margin: 0;
+  color: #333333;
 }
 
 .advantages-city,
 .advantages-bridge {
   background-color: #82b3d3;
+}
+
+.advantages-city .advantages-title,
+.advantages-bridge .advantages-title,
+.advantages-city .advantages-description,
+.advantages-bridge .advantages-description {
   color: #ffffff;
 }
 
@@ -356,6 +365,8 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .services-lead {
@@ -372,6 +383,7 @@ img {
   margin-top: 0;
   font-size: 22px;
   line-height: 26px;
+  color: #333333;
 }
 
 .services-list {
@@ -387,9 +399,10 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 230px;
-  height: 385px;
-  padding: 0 85px;
+  width: 400px;
+  min-height: 385px;
+  padding: 20px 85px;
+  box-sizing: border-box;
   gap: 30px;
 }
 
@@ -424,6 +437,7 @@ img {
   margin: 0;
   font-size: 18px;
   line-height: 21px;
+  color: #333333;
 }
 
 .services-house,
@@ -436,6 +450,8 @@ img {
   display: flex;
   justify-content: center;
   text-align: center;
+  padding: 0 20px;
+  box-sizing: border-box;
   text-decoration: none;
   color: #000000;
 }
@@ -464,13 +480,15 @@ img {
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
+  color: #333333;
 }
 
 .hotel-search-button {
   display: flex;
   align-items: center;
-  height: 52px;
-  padding: 0 50px;
+  box-sizing: border-box;
+  min-height: 52px;
+  padding: 8px 50px;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -504,13 +522,13 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 96px;
-  padding-bottom: 104px;
+  padding: 96px 20px 104px;
+  box-sizing: border-box;
   text-align: center;
   background-image: url("../images/main/subscribe-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-color: #82b3d3;
+  background-color: #3f5e72;
 }
 
 .subscribe-no-bg {
@@ -627,7 +645,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 142px;
+  min-width: 142px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -881,6 +899,7 @@ img {
 
 .tooltip-text {
   position: absolute;
+  align-items: center;
   left: 50%;
   transform: translateX(-50%);
   top: 100%;
@@ -901,7 +920,7 @@ img {
 
 .tooltip-toggle:hover + .tooltip-text,
 .tooltip-toggle:focus + .tooltip-text {
-  display: block;
+  display: flex;
 }
 
 .tooltip-text::before {
@@ -1130,6 +1149,10 @@ img {
   opacity: 0.6;
 }
 
+.control:has(.control-input:disabled) {
+  opacity: 0.3;
+}
+
 .control-input:focus + .control-mark {
   outline: 3px solid #83b3d3;
 }
@@ -1179,7 +1202,6 @@ img {
   color: #000000;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 700;
   text-align: right;
   opacity: 0.3;
 }
@@ -1354,7 +1376,7 @@ img {
   position: relative;
   display: flex;
   align-items: center;
-  width: 292px;
+  min-width: 292px;
   margin-right: auto;
   box-sizing: border-box;
 }
@@ -1389,7 +1411,10 @@ img {
 
 .view-type {
   display: flex;
+  flex-wrap: wrap;
   margin-left: 70px;
+  max-width: 160px;
+  gap: 8px;
 }
 
 .view-type a {
@@ -1420,10 +1445,6 @@ img {
   border-color: #000000;
 }
 
-.view-type a:not(:first-child) {
-  margin-left: 8px;
-}
-
 .product-list {
   display: grid;
   grid-template-columns: repeat(3, 340px);
@@ -1439,6 +1460,7 @@ img {
 .product-card {
   display: grid;
   grid-template-columns: repeat(2, 140px);
+  grid-template-rows: 1fr repeat(3, auto);
   padding: 20px;
   grid-gap: 16px 20px;
   border: 1px solid #e6e6e6;
@@ -1563,6 +1585,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  align-self: start;
   padding: 8px 22px;
   margin: 0;
   font-size: 16px;
@@ -1600,6 +1623,7 @@ img {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   width: 1060px;
   margin: 0;
   padding: 0;
@@ -1609,8 +1633,10 @@ img {
 
 .pagination-link {
   display: flex;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
+  padding-left: 18px;
+  padding-right: 18px;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
@@ -1651,6 +1677,8 @@ img {
 }
 
 .pagination-current.pagination-current {
+  padding-left: 18px;
+  padding-right: 18px;
   background-color: #f2f2f2;
   color: #000000;
 }
